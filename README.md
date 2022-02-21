@@ -1,4 +1,4 @@
-# Ej1.Calculadora
+# Calculadora
 
 Dado el siguiente HTML, crear una applicación de calculadora en Angular que funcione del siguiente modo:
 
