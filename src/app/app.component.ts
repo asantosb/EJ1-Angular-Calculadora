@@ -9,8 +9,8 @@ import { Calculadora } from '../calculadora';
 export class AppComponent {
   title = 'ej1.Calculadora';
 
-  operando1?: String;
-  operando2?: String;
+  operando1: String = '';
+  operando2: String = '';
   resultado?: Number;
   alertaOK?: String | null;
   alertaKO?: String | null;
@@ -18,7 +18,7 @@ export class AppComponent {
 
 
   sumar() : void{
-    if(this.operando1 === undefined || this.operando2 === undefined || this.operando1 == '' || this.operando2 == ''){
+    if(this.operando1 == '' || this.operando2 == ''){
       this.alertaKO = 'Tiene que rellenar los campos.';
       this.alertaOK = null;
     }else{
@@ -30,7 +30,7 @@ export class AppComponent {
   }
 
   restar() : void{
-    if(this.operando1 === undefined || this.operando2 === undefined || this.operando1 == '' || this.operando2 == ''){
+    if(this.operando1 == '' || this.operando2 == ''){
       this.alertaKO = 'Tiene que rellenar los campos.';
       this.alertaOK = null;
     }else{
@@ -42,7 +42,7 @@ export class AppComponent {
   }
 
   multiplicar() : void{
-    if(this.operando1 === undefined || this.operando2 === undefined || this.operando1 == '' || this.operando2 == ''){
+    if(this.operando1 == '' || this.operando2 == ''){
       this.alertaKO = 'Tiene que rellenar los campos.';
       this.alertaOK = null;
     }else{
@@ -54,7 +54,7 @@ export class AppComponent {
   }
 
   dividir() : void{
-    if(this.operando1 === undefined || this.operando2 === undefined || this.operando1 == '' || this.operando2 == ''){
+    if(this.operando1 == '' || this.operando2 == ''){
       this.alertaKO = 'Tiene que rellenar los campos.';
       this.alertaOK = null;
     }else{
