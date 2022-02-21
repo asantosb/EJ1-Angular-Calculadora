@@ -3,6 +3,14 @@
     <div class="col-12 col-md-8 offset-md-2 mt-5">
       <h1>Calculadora</h1>
       <div class="row">
+        <div class="col-12">
+          <div *ngIf="alertaOK != undefined && alertaOK !=null" class="alert alert-success" role="alert">
+            {{alertaOK}}
+          </div>
+          <div *ngIf="alertaKO != undefined && alertaKO !=null" class="alert alert-danger" role="alert">
+            {{alertaKO}}
+          </div>
+        </div>
         <div class="col-12 col-md-3 ">
           <div class="form-group">
             <label for="operando1">Primer operando</label>
@@ -18,10 +26,10 @@
         <div class="col-12 col-md-3 ">
           <div class="form-group">
             <label>Operación</label><br />
-            <button class="btn btn-primary" (click)="sumar()"><i class="fa fa-plus"></i></button>
-            <button class="btn btn-primary" (click)="restar()"><i class="fa fa-minus"></i></button>
-            <button class="btn btn-primary" (click)="multiplicar()"><i class="fa fa-times"></i></button>
-            <button class="btn btn-primary" (click)="dividir()"><i class="fa fa-divide"></i></button>
+            <button class="btn btn-primary me-2" (click)="sumar()"><i class="fa fa-plus"></i></button>
+            <button class="btn btn-primary me-2" (click)="restar()"><i class="fa fa-minus"></i></button>
+            <button class="btn btn-primary me-2" (click)="multiplicar()"><i class="fa fa-times"></i></button>
+            <button class="btn btn-primary me-2" (click)="dividir()"><i class="fa fa-divide"></i></button>
           </div>
         </div>
         <div class="col-12 col-md-3 ">
